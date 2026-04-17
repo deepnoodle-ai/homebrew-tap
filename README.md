@@ -6,6 +6,7 @@ Homebrew formulae for DeepNoodle tools.
 
 ```bash
 brew install deepnoodle-ai/tap/mobius
+brew install deepnoodle-ai/tap/noodlespy
 ```
 
 ## Available Formulae
