@@ -1,26 +1,26 @@
 class Mobius < Formula
   desc "CLI for the Mobius workflow orchestration platform"
   homepage "https://www.mobiusops.ai/"
-  version "0.0.10"
+  version "0.0.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.10/mobius-darwin-arm64"
-      sha256 "b33000f84b450119ab0e94b3ed541e5b9f720a03d276aaf947f6565aa1f55958"
+      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.11/mobius-darwin-arm64"
+      sha256 "770bf7efe99755c17be23d9424ec24a12cb0c2e260849a74baa85b3a5e72045e"
     else
-      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.10/mobius-darwin-amd64"
-      sha256 "f5e21a77772551eab9cfc38736e4b83e93a771e9f02634d7af8a61672b96b666"
+      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.11/mobius-darwin-amd64"
+      sha256 "35859cadab40a5a54d760309dd0c1522a9c1bacccee9a62a448a40d9e868d068"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.10/mobius-linux-arm64"
-      sha256 "97b04764ac670062fb94770048f6501be01a068197e924bdee41fbdc513506b0"
+      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.11/mobius-linux-arm64"
+      sha256 "2d59d6091ab0c40451cfb10ef1ade8218224f48d6d9e5c4f6cc18444dc95c05f"
     else
-      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.10/mobius-linux-amd64"
-      sha256 "6f988c0edc9f62d3ad66b27bda0172104964f7210824ba93d478df2d5a88a8e2"
+      url "https://github.com/deepnoodle-ai/mobius/releases/download/v0.0.11/mobius-linux-amd64"
+      sha256 "0d16403ec683a67d4d589a3a8a6f77e01e3741d5b240e5bd2964ef2c11d5b662"
     end
   end
 
@@ -30,6 +30,6 @@ class Mobius < Formula
   end
 
   test do
-    assert_match "0.0.10", shell_output("#{bin}/mobius --version 2>&1")
+    assert_match "0.0.11", shell_output("#{bin}/mobius --version 2>&1")
   end
 end
