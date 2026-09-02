@@ -1,26 +1,26 @@
 class Nvoken < Formula
   desc "Command-line client for the nvoken durable agent runtime"
   homepage "https://github.com/deepnoodle-ai/nvoken"
-  version "0.34.0"
+  version "0.35.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.34.0/nvoken_0.34.0_darwin_arm64.tar.gz"
-      sha256 "cbf9d0db495484e55d7e0df81505b7449159eeb6eb90597f07964bff3cc2c05e"
+      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.35.0/nvoken_0.35.0_darwin_arm64.tar.gz"
+      sha256 "dd79c84e1635ae0d959096de6a1506700b6e305edfc1e24af19fdd16271649d3"
     else
-      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.34.0/nvoken_0.34.0_darwin_amd64.tar.gz"
-      sha256 "83ac1a29635cebf13699cc53b2aeefd2638f5deebe08198b424dcc86be316b71"
+      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.35.0/nvoken_0.35.0_darwin_amd64.tar.gz"
+      sha256 "09b126f16b2f05e6cddaaeb374ff3106415f1b42b4a4b6a20b9d329f4f0267f0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.34.0/nvoken_0.34.0_linux_arm64.tar.gz"
-      sha256 "f14ef53ae7150173be11ed18be7bfe874fb6cdc301e851f0c7aaceeb55a153f2"
+      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.35.0/nvoken_0.35.0_linux_arm64.tar.gz"
+      sha256 "94193bce64f5ce65d76c75f1eafa4574a2ed63e508f4ede5f3a968c059bb899d"
     else
-      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.34.0/nvoken_0.34.0_linux_amd64.tar.gz"
-      sha256 "4f0b02cc1e6b5343a07e6a923dfa08b5497abae0ac6a9cac9bc72d6c1d548eaa"
+      url "https://github.com/deepnoodle-ai/nvoken/releases/download/v0.35.0/nvoken_0.35.0_linux_amd64.tar.gz"
+      sha256 "73560af47598beb64188d84d36c7f3bf592bad2ac3300f72cac805e075a255cf"
     end
   end
 
