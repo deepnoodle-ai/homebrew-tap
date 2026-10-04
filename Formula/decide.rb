@@ -5,21 +5,21 @@
 class Decide < Formula
   desc "Ask typed questions about your data and get answers with probabilities"
   homepage "https://github.com/deepnoodle-ai/decide"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.1.0/decide_darwin_amd64.tar.gz"
-      sha256 "2e382357e8e3a706f886e862ec0b0775a4c17d70ba611e31cc036ec69712bd1b"
+      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.2.0/decide_darwin_amd64.tar.gz"
+      sha256 "e846ff91131d93f1d8f831051c3aa8f4a9946016286fb3cdf6a46cbe18cd4dc4"
 
       define_method(:install) do
         bin.install "decide"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.1.0/decide_darwin_arm64.tar.gz"
-      sha256 "8ac41addd2926f0f5cbaefb9301996bfa7cf5d994e7731c2283f0558a42328b8"
+      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.2.0/decide_darwin_arm64.tar.gz"
+      sha256 "d553ce817a0d565449de530e0fd924a388d2db061193e14f3ba36cea2c1cfde7"
 
       define_method(:install) do
         bin.install "decide"
@@ -29,15 +29,15 @@ class Decide < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.1.0/decide_linux_amd64.tar.gz"
-      sha256 "e677ec30329d6d97c175f268578cefe493502f48ca5963f8ea557ed68048441c"
+      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.2.0/decide_linux_amd64.tar.gz"
+      sha256 "a8fa9154961246e52874ad373c6a4f3375c06aac2ae37345c1743e91b6b6af23"
       define_method(:install) do
         bin.install "decide"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.1.0/decide_linux_arm64.tar.gz"
-      sha256 "d089a2d51660de6e127f5c1b54ea521c1e62be32332f47acd75e2467ecff629a"
+      url "https://github.com/deepnoodle-ai/decide/releases/download/v0.2.0/decide_linux_arm64.tar.gz"
+      sha256 "e4b963d754b28f1253c9b01c10a8122ee478d7397bb692cc9e808b306e1a2159"
       define_method(:install) do
         bin.install "decide"
       end
