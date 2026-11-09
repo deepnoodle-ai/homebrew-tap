@@ -1,6 +1,6 @@
 class Mobius < Formula
   desc "CLI for the Mobius agent automation platform"
-  homepage "https://www.mobiusops.ai/"
+  homepage "https://mobiusops.com/"
   version "0.6.0"
   license "Apache-2.0"
 
