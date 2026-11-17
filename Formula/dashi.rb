@@ -5,21 +5,21 @@
 class Dashi < Formula
   desc "A terminal coding agent"
   homepage "https://github.com/deepnoodle-ai/dashi"
-  version "0.21.0"
+  version "0.22.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.21.0/dashi_darwin_amd64.tar.gz"
-      sha256 "e5a588d2f0a1fb7791f58218401244707486d8e1988633f294c96506a017330c"
+      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.22.0/dashi_darwin_amd64.tar.gz"
+      sha256 "dc61b8bb760bbe8f0c4992a7c41be2d5fd3293d07bfd024032d908d254c6f660"
 
       define_method(:install) do
         bin.install "dashi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.21.0/dashi_darwin_arm64.tar.gz"
-      sha256 "b73fec7197589175cf3befc2120e60e1da42f4583d0944a563e30d2ab05fd707"
+      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.22.0/dashi_darwin_arm64.tar.gz"
+      sha256 "98ce8492f72835d758716f6e0ae1d44f7047011bb2ca42d6c9ddea3275483d2f"
 
       define_method(:install) do
         bin.install "dashi"
@@ -29,15 +29,15 @@ class Dashi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.21.0/dashi_linux_amd64.tar.gz"
-      sha256 "d9f6dacc9e1ddbc6361a8bf141a3b179cb257ab2230b62399052f6d7eb48942a"
+      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.22.0/dashi_linux_amd64.tar.gz"
+      sha256 "f5950f3284f497b74acf4b267987a7aa1cb0ec8c2964331ad025630914444064"
       define_method(:install) do
         bin.install "dashi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.21.0/dashi_linux_arm64.tar.gz"
-      sha256 "3f48a42e895773f2e98d41804071c22a4193dbbc6d3262b8aaff91bb86ab33c5"
+      url "https://github.com/deepnoodle-ai/dashi/releases/download/v0.22.0/dashi_linux_arm64.tar.gz"
+      sha256 "dee557fe6b6e369579c79b71767464cb7e4e640e53592c7f81cf6fa52b4980f0"
       define_method(:install) do
         bin.install "dashi"
       end
